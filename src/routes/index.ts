@@ -2,7 +2,7 @@ import * as express from "express";
 import { logger } from "../index";
 
 export const register = (app: express.Application) => {
-  
+
   app.get("/getExample", (req: any, res) => {
     const queryExample: string = req.query.queryExample;
     logger.info(`Get example ${queryExample}`);
